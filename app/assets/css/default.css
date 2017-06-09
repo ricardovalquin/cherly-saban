@@ -149,6 +149,16 @@ html {
   }
 }
 
+.go-to-listing {
+  width: 200px;
+  height: 200px;
+  margin: 4rem auto;
+}
+
+.go-to-listing a {
+  font-size: 2rem;
+}
+
 .products-grid-section {
   padding: 4rem 0;
 }
