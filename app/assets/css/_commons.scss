@@ -13,7 +13,7 @@ html {font-size: 62.5%;}
 
   @media screen and (min-width: $md-min-width) {
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   @media screen and (min-width: $lg-min-width) {
@@ -31,11 +31,6 @@ html {font-size: 62.5%;}
 
 //landing-page
 $bg-color: #f1f1f1;
-$main-blue-color: #00aeef;
-$main-green-color: #00a7b5;
-$category-dark-blue: #00659d;
-$category-orange: #ee7722;
-$category-green: #00b6c9;
-$category-yellow: #ffce34;
-$category-magenta: #b6006a;
-$light-text-color: #7e8890;
+$light-gray-text-color: #43474a;
+$secondary-color: #9a004f;
+
