@@ -245,8 +245,115 @@ html {
   }
 }
 
+.filters-section {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 42px 6px rgba(0, 0, 0, 0.19);
+  margin: 2rem 0;
+  position: absolute;
+  width: 300px;
+  z-index: 2;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .filters-section {
+    box-shadow: none;
+    display: inline-block;
+    margin-right: 0;
+    position: relative;
+    vertical-align: top;
+    z-index: 1;
+  }
+}
+
+.filters-section .filter-block {
+  border-bottom: 1px solid #cccccc;
+  font-size: 1.4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.filters-section .filter-block:last-child {
+  border-bottom: none;
+}
+
+.filters-section .filter-block .filter-block-header {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.filters-section .filter-block .filter-block-header .filter-title {
+  display: inline-block;
+}
+
+.filters-section .filter-block .filter-block-header .reset {
+  float: right;
+  cursor: pointer;
+}
+
+.filters-section .filter-block ul {
+  list-style-type: none;
+}
+
+.filters-section .filter-block .filters {
+  list-style-type: none;
+}
+
+.filters-section .filter-block .filters .filter .filter-expander {
+  background-color: #33383B;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  color: #ffffff;
+}
+
+.filters-section .filter-block .filters .filter .filter-expander:hover {
+  background-color: #9a004f;
+}
+
+.filters-section .filter-block .filters .filter .filter-expander i {
+  font-size: 12px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -6px;
+  top: 50%;
+  position: absolute;
+}
+
+.filters-section .filter-block .filters .second-level-filter {
+  margin-left: 2rem;
+}
+
+.filters-section .filter-block .filters .filter, .filters-section .filter-block .filters .secondary-filter {
+  line-height: 2.3rem;
+}
+
+.filters-section .filter-block .filters .filter:hover, .filters-section .filter-block .filters .secondary-filter:hover {
+  cursor: pointer;
+}
+
+.filters-section .filter-block .filters .filter:hover .filter-title, .filters-section .filter-block .filters .secondary-filter:hover .filter-title {
+  color: #9a004f;
+}
+
+.filters-section .filter-block .filters .secondary-filter:hover .secondary-filter-title {
+  color: #9a004f;
+}
+
 .products-grid-section {
   padding: 4rem 0;
+  z-index: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .products-grid-section {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 340px);
+  }
 }
 
 .products-grid-section a {
