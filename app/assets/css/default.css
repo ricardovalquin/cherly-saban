@@ -284,7 +284,7 @@ html {
     margin-right: 0;
     position: relative;
     vertical-align: top;
-    z-index: 1;
+    z-index: 0;
   }
 }
 
@@ -374,7 +374,7 @@ html {
   .products-grid-section {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 340px);
+    width: calc(100% - 300px);
   }
 }
 
