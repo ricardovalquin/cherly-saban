@@ -174,13 +174,29 @@ html {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (min-width: 992px) {
+  .listing-header .view-title {
+    display: inline-block;
+  }
+}
+
 .listing-header .hr-desktop-hidden {
   margin-bottom: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .listing-header .hr-desktop-hidden {
     display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .listing-header .buttons-wp {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    margin-top: -0.5rem;
   }
 }
 
@@ -192,6 +208,12 @@ html {
   font-size: 1.3rem;
   font-weight: 600;
   padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .listing-header .buttons-wp .filters {
+    display: none;
+  }
 }
 
 .listing-header .buttons-wp .filters:hover {
@@ -238,7 +260,7 @@ html {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .listing-header .hr-mobile-hidden {
     display: block;
     margin-top: 2rem;

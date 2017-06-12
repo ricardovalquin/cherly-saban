@@ -14,16 +14,27 @@
   .view-title {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    @media screen and (min-width: $lg-min-width) {
+      display: inline-block;
+    }
   }
 
   .hr-desktop-hidden {
     margin-bottom: 1.5rem;
-    @media screen and (min-width: $md-min-width) {
+    @media screen and (min-width: $lg-min-width) {
       display: none;
     }
   }
 
   .buttons-wp {
+    @media screen and (min-width: $lg-min-width) {
+      text-align: right;
+      display: inline-block;
+      float: right;
+      vertical-align: middle;
+      margin-top: -0.5rem;
+    }
+
     .filters {
       background-color: #ffffff;
       border: 1px solid $secondary-color;
@@ -32,6 +43,9 @@
       font-size: 1.3rem;
       font-weight: 600;
       padding: 1rem;
+      @media screen and (min-width: $lg-min-width) {
+        display: none;
+      }
 
       &:hover {
         cursor: pointer;
@@ -77,7 +91,7 @@
 
   .hr-mobile-hidden {
     display: none;
-    @media screen and (min-width: $md-min-width) {
+    @media screen and (min-width: $lg-min-width) {
       display: block;
       margin-top: 2rem;
     }
