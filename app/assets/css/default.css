@@ -169,6 +169,10 @@ html {
   display: inline-block;
 }
 
+.listing-header .breadcrumbs ul li:hover {
+  cursor: pointer;
+}
+
 .listing-header .view-title {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -246,6 +250,7 @@ html {
   float: right;
   font-size: 1.3rem;
   padding: 1.3rem 1rem;
+  position: relative;
 }
 
 .listing-header .buttons-wp .dropdown-sort:hover {
@@ -254,6 +259,16 @@ html {
 
 .listing-header .buttons-wp .dropdown-sort .dropdown-content {
   display: none;
+}
+
+.listing-header .buttons-wp .dropdown-sort .dropdown-content ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.listing-header .buttons-wp .dropdown-sort .dropdown-content ul li {
+  background-color: #ffffff;
+  line-height: 3rem;
 }
 
 .listing-header .hr-mobile-hidden {
@@ -436,8 +451,16 @@ html {
   .products-grid-section .grid-wp .product-wp {
     display: inline-block;
     margin-right: 2rem;
+    min-height: 350px;
     text-align: left;
     width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-grid-section .grid-wp .product-wp {
+    min-height: 270px;
+    width: 22%;
   }
 }
 
@@ -463,7 +486,14 @@ html {
 
 @media screen and (min-width: 992px) {
   .products-grid-section .grid-wp .product-wp .text-wp {
+    font-size: 2rem;
     padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products-grid-section .grid-wp .product-wp .text-wp {
+    font-size: 1.5rem;
   }
 }
 

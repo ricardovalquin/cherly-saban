@@ -7,6 +7,10 @@
     ul {
       li {
         display: inline-block;
+        
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -78,13 +82,32 @@
       float: right;
       font-size: 1.3rem;
       padding: 1.3rem 1rem;
-
+      position: relative;
       &:hover {
         cursor: pointer;
       }
 
       .dropdown-content {
         display: none;
+
+        //display: block;
+        //position: absolute;
+        //width: 100%;
+        //text-align: left;
+        //margin-left: -1rem;
+        //border: 1px solid #cccccc;
+        //top: 4rem;
+        //z-index: 1;
+
+        ul {
+          list-style-type: none;
+          padding-left: 1rem;
+
+          li {
+            background-color: #ffffff;
+            line-height: 3rem;
+          }
+        }
       }
     }
   }
@@ -265,8 +288,13 @@
       @media screen and (min-width: $lg-min-width) {
         display: inline-block;
         margin-right: 2rem;
+        min-height: 350px;
         text-align: left;
         width: 30%;
+      }
+      @media screen and (min-width: $xl-min-width) {
+        min-height: 270px;
+        width: 22%;
       }
 
 
@@ -286,7 +314,11 @@
           display: none;
         }
         @media screen and (min-width: $lg-min-width) {
+          font-size: 2rem;
           padding-left: 1rem;
+        }
+        @media screen and (min-width: $xl-min-width) {
+          font-size: 1.5rem;
         }
 
         .product-title {
