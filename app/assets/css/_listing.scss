@@ -109,6 +109,7 @@
   box-shadow: 1px 1px 20px 6px rgba(0, 0, 0, 0.19);
   border: 1px solid #cccccc;
   display: none;
+  left: 1rem;
   margin-left: -1rem;
   margin-top: 1.5rem;
   position: absolute;
@@ -175,6 +176,10 @@
       .reset {
         float: right;
         cursor: pointer;
+
+        &:hover {
+          color: $secondary-color;
+        }
       }
     }
 
