@@ -103,14 +103,20 @@
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100%;
-  text-align: left;
-  margin-left: -1rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 20px 6px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 1px 1px 20px 6px rgba(0, 0, 0, 0.19);
+  box-shadow: 1px 1px 20px 6px rgba(0, 0, 0, 0.19);
   border: 1px solid #cccccc;
+  display: none;
+  margin-left: -1rem;
+  margin-top: 1.5rem;
+  position: absolute;
+  text-align: left;
   top: 4rem;
+  width: 152.25px;
   z-index: 1;
+
 
   ul {
     list-style-type: none;
@@ -119,6 +125,10 @@
     li {
       background-color: #ffffff;
       line-height: 3rem;
+
+      &:hover {
+        font-weight: 600;
+      }
     }
   }
 }
