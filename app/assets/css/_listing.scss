@@ -21,6 +21,10 @@
     @media screen and (min-width: $lg-min-width) {
       display: inline-block;
     }
+
+    p {
+      font-family: didot;
+    }
   }
 
   .hr-desktop-hidden {

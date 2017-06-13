@@ -4,6 +4,11 @@
   outline: none;
 }
 
+@font-face {
+  font-family: didot;
+  src: url("../fonts/didot.ttc");
+}
+
 html,
 body {
   height: 100% !important;
@@ -182,6 +187,10 @@ html {
   .listing-header .view-title {
     display: inline-block;
   }
+}
+
+.listing-header .view-title p {
+  font-family: didot;
 }
 
 .listing-header .hr-desktop-hidden {
