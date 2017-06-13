@@ -189,7 +189,7 @@
           i {
             font-size: 12px;
             left: 50%;
-            margin-left: -5px;
+            margin-left: -4.5px;
             margin-top: -6px;
             top: 50%;
             position: absolute;
@@ -198,7 +198,12 @@
       }
 
       .second-level-filter {
+        display: none;
         margin-left: 2rem;
+      }
+
+      .second-level-visible {
+        display: block;
       }
 
       .filter, .secondary-filter {

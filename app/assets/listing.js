@@ -39,3 +39,21 @@ $('.reset').click(function () {
 
   selectedFilters.removeClass('filter-active');
 });
+
+$('.filter-expander').click(function () {
+  var expander = $(this);
+  var icon = $(this).find('.expander-filter-icon');
+  var parentNode = $(expander[0].parentElement);
+  var nestedList = parentNode.find('.second-level-filter');
+
+  nestedList.toggleClass('second-level-visible');
+
+  if(icon.hasClass('fa-plus')){
+    icon.removeClass('fa-plus');
+    icon.addClass('fa-minus');
+  }else {
+    icon.removeClass('fa-minus');
+    icon.addClass('fa-plus');
+  }
+
+});

@@ -362,14 +362,19 @@ html {
 .filters-section .filter-block .filters .filter .filter-expander i {
   font-size: 12px;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -4.5px;
   margin-top: -6px;
   top: 50%;
   position: absolute;
 }
 
 .filters-section .filter-block .filters .second-level-filter {
+  display: none;
   margin-left: 2rem;
+}
+
+.filters-section .filter-block .filters .second-level-visible {
+  display: block;
 }
 
 .filters-section .filter-block .filters .filter, .filters-section .filter-block .filters .secondary-filter {
