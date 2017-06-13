@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
   <!-- bower:css -->
   <!-- endbower -->
 
@@ -27,9 +32,9 @@
       <div class="view-title"><p>Product Listing Page</p></div>
       <hr class="hr-desktop-hidden"/>
       <div class="buttons-wp">
-        <button class="filters"><span>FILTERS </span><span class="expander"><i class="fa fa-plus"></i></span></button>
-        <div class="dropdown-sort">
-          <span>SORT BY FEATURED <i class="fa fa-angle-down"></i></span>
+        <button id="filters-btn" class="filters"><span>FILTERS </span><span class="expander"><i class="expander-icon fa fa-plus"></i></span></button>
+        <div id="sort-btn" class="dropdown-sort">
+          <span>SORT BY FEATURED <i class="sorter-icon fa fa-angle-down"></i></span>
           <div class="dropdown-content">
             <ul>
               <li>Feature 1</li>
@@ -47,9 +52,9 @@
       <div class="filter-block">
         <h3 class="filter-title"></h3>
         <ul class="filters">
-          <li class="filter"><span class="filter-title">All Hand Blown Glass </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">All Jewelry </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">All Books </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">All Hand Blown Glass </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">All Jewelry </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">All Books </span><i class="fa fa-close"></i></li>
         </ul>
       </div>
       <div class="filter-block">
@@ -61,18 +66,18 @@
           <li class="filter">
             <span class="filter-title">Necklaces</span> <span class="filter-expander"><i class="fa fa-plus"></i></span>
             <ul class="second-level-filter">
-              <li class="secondary-filter"><span class="secondary-filter-title">Some Necklaces </span><i
+              <li class="secondary-filter single-filter"><span class="secondary-filter-title">Some Necklaces </span><i
                 class="fa fa-close"></i></li>
-              <li class="secondary-filter"><span class="secondary-filter-title">Some Necklaces </span><i
+              <li class="secondary-filter single-filter"><span class="secondary-filter-title">Some Necklaces </span><i
                 class="fa fa-close"></i></li>
             </ul>
           </li>
           <li class="filter">
             <span class="filter-title">Bracelets</span>
             <ul class="second-level-filter">
-              <li class="secondary-filter"><span class="secondary-filter-title">Stretchy </span><i
+              <li class="secondary-filter single-filter"><span class="secondary-filter-title">Stretchy </span><i
                 class="fa fa-close"></i></li>
-              <li class="secondary-filter"><span class="secondary-filter-title">Wrap </span><i class="fa fa-close"></i>
+              <li class="secondary-filter single-filter"><span class="secondary-filter-title">Wrap </span><i class="fa fa-close"></i>
               </li>
             </ul>
           </li>
@@ -84,14 +89,14 @@
           <span class="reset">RESET</span>
         </div>
         <ul class="filters">
-          <li class="filter"><span class="filter-title">Black </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Blue </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Green </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Multi </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Pink </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Purple </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">White </span><i class="fa fa-close"></i></li>
-          <li class="filter"><span class="filter-title">Yellow </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Black </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Blue </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Green </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Multi </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Pink </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Purple </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">White </span><i class="fa fa-close"></i></li>
+          <li class="filter single-filter"><span class="filter-title">Yellow </span><i class="fa fa-close"></i></li>
         </ul>
       </div>
     </section>
@@ -238,6 +243,7 @@
 <!-- endbower -->
 
 <!-- inject:js -->
+<script src="assets/listing.js"></script>
 <!-- endinject -->
 </body>
 </html>
