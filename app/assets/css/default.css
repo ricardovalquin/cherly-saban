@@ -433,6 +433,8 @@ ul {
 
 .filters-section .filter-block .filters .filter-active i.fa-close {
   color: #9a004f;
+  font-size: 1.2rem;
+  vertical-align: top;
 }
 
 .menu-visible {
