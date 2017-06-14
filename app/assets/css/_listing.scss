@@ -7,7 +7,7 @@
     ul {
       li {
         display: inline-block;
-        
+
         &:hover {
           cursor: pointer;
         }
@@ -118,7 +118,6 @@
   width: 152.25px;
   z-index: 1;
 
-
   ul {
     list-style-type: none;
     padding-left: 1rem;
@@ -140,7 +139,7 @@
   -webkit-box-shadow: 1px 1px 42px 6px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 1px 1px 42px 6px rgba(0, 0, 0, 0.19);
   box-shadow: 1px 1px 42px 6px rgba(0, 0, 0, 0.19);
-  margin: 2rem 0;
+  margin: 1rem 0;
   position: absolute;
   width: 300px;
   z-index: 2;
@@ -158,8 +157,8 @@
   .filter-block {
     border-bottom: 1px solid #cccccc;
     font-size: 1.4rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     &:last-child {
       border-bottom: none;
@@ -174,9 +173,9 @@
       }
 
       .reset {
-        float: right;
         cursor: pointer;
-
+        float: right;
+        font-size: 1.2rem;
         &:hover {
           color: $secondary-color;
         }
@@ -191,6 +190,15 @@
       list-style-type: none;
 
       .filter {
+
+        .expander-wp {
+          &:hover {
+            .filter-expander {
+              background-color: $secondary-color;
+            }
+          }
+        }
+
         .filter-expander {
           background-color: #33383B;
           border-radius: 50%;
@@ -231,7 +239,7 @@
         &:hover {
           cursor: pointer;
 
-          .filter-title{
+          .filter-title {
             color: $secondary-color;
           }
         }
@@ -304,7 +312,7 @@
         width: 50%;
       }
 
-      @media screen and (min-width:  $md-min-width) {
+      @media screen and (min-width: $md-min-width) {
         min-height: 360px;
         vertical-align: top;
 
@@ -334,7 +342,6 @@
         min-height: 270px;
         width: 22%;
       }
-
 
       .img-wp {
         margin-bottom: 2rem;
@@ -366,6 +373,91 @@
 
         .product-price {
           font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.pagination-wp {
+  font-size: 1.8rem;
+  @media screen and (min-width: $lg-min-width) {
+    font-size: 1.4rem;
+  }
+  margin: 4rem 0;
+  text-align: center;
+
+  .controls {
+    font-weight: 600;
+
+    .prev-btn {
+      margin-right: 1rem;
+      @media screen and (min-width: $md-min-width) {
+        margin-right: 2rem;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        margin-right: 4rem;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+
+      i {
+        @media screen and (min-width: $lg-min-width) {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .pages-list {
+      display: inline-block;
+    }
+
+    .page {
+      display: inline-block;
+      padding: 0 0.2rem;
+      @media screen and (min-width: $md-min-width) {
+        padding: 0 0.6rem;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        padding: 0 1.2rem;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+
+      &.active {
+        color: $secondary-color;
+      }
+    }
+
+    .page-doter {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .next-btn {
+      margin-left: 1rem;
+      @media screen and (min-width: $md-min-width) {
+        margin-left: 2rem;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        margin-left: 4rem;
+      }
+
+      &:hover {
+        color: $secondary-color;
+        cursor: pointer;
+      }
+
+      i {
+        @media screen and (min-width: $lg-min-width) {
+          font-size: 1.2rem;
         }
       }
     }

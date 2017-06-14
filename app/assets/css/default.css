@@ -154,6 +154,10 @@ html {
   }
 }
 
+ul {
+  list-style-type: none;
+}
+
 .go-to-listing {
   width: 200px;
   height: 200px;
@@ -310,7 +314,7 @@ html {
   display: none;
   background-color: #ffffff;
   box-shadow: 1px 1px 42px 6px rgba(0, 0, 0, 0.19);
-  margin: 2rem 0;
+  margin: 1rem 0;
   position: absolute;
   width: 300px;
   z-index: 2;
@@ -331,8 +335,8 @@ html {
 .filters-section .filter-block {
   border-bottom: 1px solid #cccccc;
   font-size: 1.4rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .filters-section .filter-block:last-child {
@@ -349,8 +353,9 @@ html {
 }
 
 .filters-section .filter-block .filter-block-header .reset {
-  float: right;
   cursor: pointer;
+  float: right;
+  font-size: 1.2rem;
 }
 
 .filters-section .filter-block .filter-block-header .reset:hover {
@@ -363,6 +368,10 @@ html {
 
 .filters-section .filter-block .filters {
   list-style-type: none;
+}
+
+.filters-section .filter-block .filters .filter .expander-wp:hover .filter-expander {
+  background-color: #9a004f;
 }
 
 .filters-section .filter-block .filters .filter .filter-expander {
@@ -554,6 +563,110 @@ html {
 
 .products-grid-section .grid-wp .product-wp .text-wp .product-price {
   font-weight: 600;
+}
+
+.pagination-wp {
+  font-size: 1.8rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp {
+    font-size: 1.4rem;
+  }
+}
+
+.pagination-wp .controls {
+  font-weight: 600;
+}
+
+.pagination-wp .controls .prev-btn {
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination-wp .controls .prev-btn {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp .controls .prev-btn {
+    margin-right: 4rem;
+  }
+}
+
+.pagination-wp .controls .prev-btn:hover {
+  color: #9a004f;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp .controls .prev-btn i {
+    font-size: 1.2rem;
+  }
+}
+
+.pagination-wp .controls .pages-list {
+  display: inline-block;
+}
+
+.pagination-wp .controls .page {
+  display: inline-block;
+  padding: 0 0.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination-wp .controls .page {
+    padding: 0 0.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp .controls .page {
+    padding: 0 1.2rem;
+  }
+}
+
+.pagination-wp .controls .page:hover {
+  color: #9a004f;
+  cursor: pointer;
+}
+
+.pagination-wp .controls .page.active {
+  color: #9a004f;
+}
+
+.pagination-wp .controls .page-doter:hover {
+  cursor: pointer;
+}
+
+.pagination-wp .controls .next-btn {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .pagination-wp .controls .next-btn {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp .controls .next-btn {
+    margin-left: 4rem;
+  }
+}
+
+.pagination-wp .controls .next-btn:hover {
+  color: #9a004f;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .pagination-wp .controls .next-btn i {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=default.css.map */

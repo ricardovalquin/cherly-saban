@@ -40,7 +40,7 @@ $('.reset').click(function () {
   selectedFilters.removeClass('filter-active');
 });
 
-$('.filter-expander').click(function () {
+$('.expander-wp').click(function () {
   var expander = $(this);
   var icon = $(this).find('.expander-filter-icon');
   var parentNode = $(expander[0].parentElement);
