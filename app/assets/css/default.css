@@ -450,7 +450,8 @@ ul {
   .products-grid-section {
     display: inline-block;
     vertical-align: top;
-    width: calc(100% - 300px);
+    width: calc(100% - 315px);
+    margin-left: 1.5rem;
   }
 }
 
