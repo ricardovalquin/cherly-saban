@@ -474,6 +474,8 @@ ul {
   margin: 2rem auto 0;
   margin-bottom: 2rem;
   text-align: center;
+  width: 50%;
+  display: inline-block;
   max-width: 25rem;
 }
 
@@ -533,8 +535,14 @@ ul {
 
 .products-grid-section .grid-wp .product-wp .text-wp {
   color: #43474a;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 544px) {
+  .products-grid-section .grid-wp .product-wp .text-wp {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -566,14 +574,14 @@ ul {
 }
 
 .pagination-wp {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 4rem 0;
   text-align: center;
 }
 
 @media screen and (min-width: 992px) {
   .pagination-wp {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 

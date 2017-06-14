@@ -301,6 +301,8 @@
       margin: 2rem auto 0;
       margin-bottom: 2rem;
       text-align: center;
+      width: 50%;
+      display: inline-block;
       max-width: 25rem;
 
       &:hover {
@@ -353,8 +355,11 @@
 
       .text-wp {
         color: $light-gray-text-color;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         margin-bottom: 1rem;
+        @media screen and (min-width: $sm-min-width) {
+          font-size: 2.2rem;
+        }
         @media screen and (min-width: $md-min-width) {
           display: none;
         }
@@ -380,9 +385,9 @@
 }
 
 .pagination-wp {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   @media screen and (min-width: $lg-min-width) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   margin: 4rem 0;
   text-align: center;
