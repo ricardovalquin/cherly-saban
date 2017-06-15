@@ -711,4 +711,120 @@ ul {
   }
 }
 
+header {
+  border-bottom: 1px solid #cccccc;
+}
+
+header .header-wp {
+  font-size: 0;
+  padding-bottom: 2rem;
+  margin: 2rem 0 0;
+}
+
+header .header-wp .logo-wp {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60%;
+}
+
+@media screen and (min-width: 992px) {
+  header .header-wp .logo-wp {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+header .header-wp .logo-wp img {
+  width: 100%;
+}
+
+header .header-wp .desktop-buttons-wp {
+  display: none;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 992px) {
+  header .header-wp .desktop-buttons-wp {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+header .header-wp .desktop-buttons-wp .user-cta {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+header .header-wp .desktop-buttons-wp .user-cta .user-actions .action {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+
+header .header-wp .desktop-buttons-wp .user-cta .user-actions .action.cart {
+  margin-right: 0;
+}
+
+header .header-wp .desktop-buttons-wp .menu-wp {
+  font-size: 1rem;
+  display: inline-block;
+  width: 70%;
+}
+
+header .header-wp .desktop-buttons-wp .menu-wp .menu-list {
+  text-align: right;
+}
+
+header .header-wp .desktop-buttons-wp .menu-wp .menu-list .menu-item {
+  display: inline-block;
+}
+
+header .header-wp .desktop-buttons-wp .social-icons {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-align: right;
+  width: 30%;
+}
+
+header .header-wp .desktop-buttons-wp .social-icons a .social-icon {
+  color: #43474a;
+  padding-left: 1rem;
+}
+
+header .header-wp .desktop-buttons-wp .social-icons a:hover {
+  cursor: pointer;
+}
+
+header .header-wp .mobile-buttons-wp {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-align: right;
+  vertical-align: middle;
+  width: 40%;
+}
+
+@media screen and (min-width: 544px) {
+  header .header-wp .mobile-buttons-wp {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .header-wp .mobile-buttons-wp {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .header-wp .mobile-buttons-wp {
+    display: none;
+  }
+}
+
+header .header-wp .mobile-buttons-wp .cart-wp {
+  padding-right: 1.5rem;
+}
+
 /*# sourceMappingURL=default.css.map */

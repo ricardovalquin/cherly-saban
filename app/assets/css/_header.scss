@@ -1,0 +1,103 @@
+header {
+  border-bottom: 1px solid #cccccc;
+  .header-wp {
+    font-size: 0;
+    padding-bottom: 2rem;
+    margin: 2rem 0 0;
+
+    .logo-wp {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60%;
+      @media screen and (min-width: $lg-min-width) {
+        display: inline-block;
+        width: 50%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+
+    .desktop-buttons-wp {
+      display: none;
+      font-size: 0;
+      vertical-align: middle;
+      @media screen and (min-width: $lg-min-width) {
+        display: inline-block;
+        width: 50%;
+      }
+
+      .user-cta {
+        text-align: right;
+        margin-bottom: 2rem;
+        .user-actions {
+          .action {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-right: 2rem;
+
+            &.cart {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .menu-wp {
+        font-size: 1rem;
+        display: inline-block;
+        width: 70%;
+
+        .menu-list {
+          text-align: right;
+
+          .menu-item {
+            display: inline-block;
+          }
+        }
+      }
+
+      .social-icons {
+        display: inline-block;
+        font-size: 1.2rem;
+        text-align: right;
+        width: 30%;
+
+        a {
+          .social-icon {
+            color: $light-gray-text-color;
+            padding-left: 1rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .mobile-buttons-wp {
+      display: inline-block;
+      font-size: 1.4rem;
+      text-align: right;
+      vertical-align: middle;
+      width: 40%;
+
+      @media screen and (min-width: $sm-min-width) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: $md-min-width) {
+        font-size: 2.2rem;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        display: none;
+      }
+
+      .cart-wp {
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}
