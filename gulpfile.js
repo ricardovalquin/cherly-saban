@@ -6,8 +6,8 @@ var gutil = require('gulp-util');
 var eslint = require('gulp-eslint');
 var friendlyFormatter = require("eslint-friendly-formatter");
 var reload = browserSync.reload;
-
 var eslintErrorOccured   = false;
+var htmlTagInclude = require('gulp-html-tag-include');
 
 gulp.task('bower', function () {
   gulp.src('app/index.html')
@@ -21,11 +21,19 @@ gulp.task('injectFiles', function() {
     .pipe(gulp.dest('app/'));
 });
 
+gulp.task('html-include', function() {
+  return gulp.src(['app/**/*.html', '!app/components/**/*.html'])
+    .pipe($.plumber())
+    .pipe(htmlTagInclude())
+    .pipe(gulp.dest('./tmp/'))//.tmp/
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('injectCssFiles', function(){
   var target = gulp.src('app/index.html');
 
   return target.pipe($.inject(gulp.src(['app/assets/css/**/*.css'], {read: false}), {ignorePath: 'app', addRootSlash: false}))
-    .pipe(gulp.dest('app/'));
+    .pipe(gulp.dest('./tmp/'));
 });
 
 gulp.task('styles', function(){
@@ -41,9 +49,24 @@ gulp.task('styles', function(){
     .pipe($.autoprefixer('last 2 versions', 'safari 5', 'ie6', 'ie7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     //.pipe($.cssmin)
     .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest('app/assets/css/'))
+    .pipe(gulp.dest('tmp/assets/css/'))
     .pipe(browserSync.stream({match: '**/*.css'}));
   //notify
+});
+
+gulp.task('images', function () {
+  return gulp.src(['app/assets/img/**/*.*'])
+    .pipe(gulp.dest('tmp/assets/img/'))
+});
+
+gulp.task('move-js-files', function () {
+  return gulp.src(['app/assets/**/*.js'])
+    .pipe(gulp.dest('tmp/assets/'))
+});
+
+gulp.task('move-fonts-files', function () {
+  return gulp.src(['app/assets/fonts/**/*.*'])
+    .pipe(gulp.dest('tmp/assets/fonts/'))
 });
 
 var jsCustomSRC = ['app/**/*.js', '!node_modules/**/*.js'];
@@ -88,13 +111,12 @@ gulp.task('lint', function () {
 
 gulp.task('js-watch', ['lint'], browserSync.reload);
 
-
-
-gulp.task('serve', ['styles', 'injectCssFiles', 'injectFiles'], function(){
+gulp.task('serve', ['move-fonts-files', 'move-js-files', 'images', 'html-include', 'styles', 'injectCssFiles', 'injectFiles'], function(){
   gulp.watch('app/assets/css/**/*.scss', ['styles']);
-  gulp.watch("app/**/*.js", ['js-watch']);
+  gulp.watch("app/**/*.js", ['js-watch', 'move-js-files']);
+  gulp.watch('app/**/*.html', ['html-include']);
   gulp.watch('app/**/*.html').on('change', reload);
   browserSync.init({
-    server: 'app/'
+    server: './tmp/'
   });
 });
