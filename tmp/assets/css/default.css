@@ -859,8 +859,8 @@ header .header-wp .mobile-buttons-wp .cart-wp {
 
 footer {
   border-top: 4px solid #9a004f;
+  padding-bottom: 2rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -874,15 +874,38 @@ footer .subscribe-wp {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  footer .subscribe-wp {
+    width: 35%;
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    text-align: right;
+  }
+}
+
 footer .subscribe-wp .email-address {
   background-color: #f4f4f4;
   border: none;
   color: #969696;
   display: inline-block;
   font-size: 1.3rem;
+  height: 35px;
   padding: 1rem;
   vertical-align: top;
   width: 225px;
+}
+
+@media screen and (min-width: 992px) {
+  footer .subscribe-wp .email-address {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .subscribe-wp .email-address {
+    width: 220px;
+  }
 }
 
 footer .subscribe-wp .submit-btn {
@@ -894,8 +917,15 @@ footer .subscribe-wp .submit-btn {
   font-weight: 600;
   height: 35px;
   padding: 1rem;
+  text-align: center;
   vertical-align: top;
   width: 75px;
+}
+
+@media screen and (min-width: 992px) {
+  footer .subscribe-wp .submit-btn {
+    width: 100px;
+  }
 }
 
 footer .subscribe-wp .submit-btn:hover {
@@ -910,6 +940,17 @@ footer .footer-menu-wp {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  footer .footer-menu-wp {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
 footer .footer-menu-wp .footer-list {
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -917,13 +958,39 @@ footer .footer-menu-wp .footer-list {
 
 @media screen and (min-width: 768px) {
   footer .footer-menu-wp .footer-list {
-    width: 50%;
     display: inline-block;
+    text-align: left;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .footer-menu-wp .footer-list {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .footer-menu-wp .footer-list {
+    font-size: 1.1rem;
   }
 }
 
 footer .footer-menu-wp .footer-list .footer-menu-item {
   line-height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-menu-wp .footer-list .footer-menu-item {
+    display: inline-block;
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-menu-wp .footer-list .footer-menu-item.about-item {
+    padding-left: 0;
+  }
 }
 
 footer .footer-menu-wp .footer-list .footer-menu-item a {
@@ -935,7 +1002,7 @@ footer .footer-menu-wp .footer-list .footer-menu-item a:visited, footer .footer-
   color: #000000;
 }
 
-footer .footer-menu-wp .footer-list .footer-menu-item:hover {
+footer .footer-menu-wp .footer-list .footer-menu-item a:hover {
   color: #9a004f;
   cursor: pointer;
   font-weight: 600;
@@ -949,8 +1016,15 @@ footer .footer-menu-wp .social-icons {
 
 @media screen and (min-width: 768px) {
   footer .footer-menu-wp .social-icons {
-    width: 50%;
     display: inline-block;
+    text-align: right;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .footer-menu-wp .social-icons a i.social-icon {
+    font-size: 1.4rem;
   }
 }
 
@@ -961,8 +1035,37 @@ footer .copyright-wp {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  footer .copyright-wp {
+    font-size: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .copyright-wp {
+    margin: 2.5rem 0;
+  }
+}
+
 footer .copyright-wp .copyright {
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  footer .copyright-wp .copyright {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .copyright-wp .copyright {
+    font-size: 1.4rem;
+  }
 }
 
 footer .copyright-wp .roswell {
@@ -970,8 +1073,30 @@ footer .copyright-wp .roswell {
   font-weight: 300;
 }
 
+@media screen and (min-width: 768px) {
+  footer .copyright-wp .roswell {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: right;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .copyright-wp .roswell {
+    font-size: 1.4rem;
+  }
+}
+
 footer .copyright-wp .roswell a:visited, footer .copyright-wp .roswell a:visited, footer .copyright-wp .roswell a:active, footer .copyright-wp .roswell a:link {
   color: #969696;
+}
+
+footer .copyright-wp .roswell a:hover {
+  color: #9a004f;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=default.css.map */

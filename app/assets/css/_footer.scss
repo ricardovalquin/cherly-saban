@@ -1,7 +1,7 @@
 footer {
   border-top: 4px solid $secondary-color;
+  padding-bottom: 2rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
 
   @media screen and (min-width: $lg-min-width) {
     padding-top: 4rem;
@@ -11,15 +11,30 @@ footer {
     margin: 0 auto;
     text-align: center;
 
+    @media screen and (min-width: $xl-min-width) {
+      width: 35%;
+      display: inline-block;
+      float: right;
+      vertical-align: top;
+      text-align: right;
+    }
+
     .email-address {
       background-color: #f4f4f4;
       border: none;
       color: #969696;
       display: inline-block;
       font-size: 1.3rem;
+      height: 35px;
       padding: 1rem;
       vertical-align: top;
       width: 225px;
+      @media screen and (min-width: $lg-min-width) {
+        width: 300px;
+      }
+      @media screen and (min-width: $xl-min-width) {
+        width: 220px;
+      }
     }
 
     .submit-btn{
@@ -31,8 +46,12 @@ footer {
       font-weight: 600;
       height: 35px;
       padding: 1rem;
+      text-align: center;
       vertical-align: top;
       width: 75px;
+      @media screen and (min-width: $lg-min-width) {
+        width: 100px;
+      }
 
       &:hover {
         background-color: #ffffff;
@@ -46,18 +65,43 @@ footer {
     font-size: 0;
     padding-top: 2rem;
     text-align: center;
+    @media screen and (min-width: $xl-min-width) {
+      width: 65%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right;
+      padding-top: 1rem;
+      margin-bottom: 3rem;
+    }
 
     .footer-list {
       font-size: 1.1rem;
       margin-bottom: 1rem;
 
       @media screen and (min-width: $md-min-width) {
-        width: 50%;
         display: inline-block;
+        text-align: left;
+        width: 80%;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        font-size: 1.2rem;
+      }
+      @media screen and (min-width: $xl-min-width) {
+        font-size: 1.1rem;
       }
 
       .footer-menu-item {
         line-height: 2.5rem;
+        @media screen and (min-width: $md-min-width) {
+          display: inline-block;
+          padding-left: 3rem;
+        }
+
+        &.about-item {
+          @media screen and (min-width: $md-min-width) {
+            padding-left: 0;
+          }
+        }
 
         a {
           font-family: didot;
@@ -65,13 +109,14 @@ footer {
           &:visited, &:visited,  &:active, &:link {
             color: #000000;
           }
+
+          &:hover {
+            color: $secondary-color;
+            cursor: pointer;
+            font-weight: 600;
+          }
         }
 
-        &:hover {
-          color: $secondary-color;
-          cursor: pointer;
-          font-weight: 600;
-        }
       }
     }
 
@@ -80,8 +125,16 @@ footer {
       text-align: center;
       width: 100%;
       @media screen and (min-width: $md-min-width) {
-        width: 50%;
         display: inline-block;
+        text-align: right;
+        width: 20%;
+      }
+      a {
+        i.social-icon {
+          @media screen and (min-width: $lg-min-width) {
+            font-size: 1.4rem;
+          }
+        }
       }
     }
   }
@@ -91,17 +144,51 @@ footer {
     line-height: 3rem;
     margin: 2rem 0;
     text-align: center;
+    @media screen and (min-width: $md-min-width) {
+      font-size: 0;
+      text-align: left;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      margin: 2.5rem 0;
+    }
 
     .copyright {
       font-weight: 600;
+      @media screen and (min-width: $md-min-width) {
+        display: inline-block;
+        font-size: 1.2rem;
+        text-align: left;
+        vertical-align: top;
+        width: 50%;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        font-size: 1.4rem;
+      }
     }
 
     .roswell {
       color: #969696;
       font-weight: 300;
+      @media screen and (min-width: $md-min-width) {
+        display: inline-block;
+        font-size: 1.2rem;
+        text-align: right;
+        vertical-align: top;
+        width: 50%;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        font-size: 1.4rem;
+      }
+
       a {
         &:visited, &:visited,  &:active, &:link {
           color: #969696;
+        }
+
+        &:hover {
+          color: $secondary-color;
+          cursor: pointer;
+          font-weight: 600;
         }
       }
     }
