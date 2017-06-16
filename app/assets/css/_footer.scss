@@ -186,9 +186,9 @@ footer {
         }
 
         &:hover {
-          color: $secondary-color;
           cursor: pointer;
           font-weight: 600;
+          text-decoration: none;
         }
       }
     }

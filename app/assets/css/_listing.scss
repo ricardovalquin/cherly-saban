@@ -278,7 +278,7 @@
 }
 
 .products-grid-section {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
   z-index: 1;
 
   @media screen and (min-width: $lg-min-width) {
@@ -423,7 +423,7 @@
   @media screen and (min-width: $lg-min-width) {
     font-size: 1.6rem;
   }
-  margin: 6rem 0;
+  margin: 6rem 0 4rem;
   text-align: center;
 
   .controls {
