@@ -1,0 +1,109 @@
+footer {
+  border-top: 4px solid $secondary-color;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  @media screen and (min-width: $lg-min-width) {
+    padding-top: 4rem;
+  }
+
+  .subscribe-wp {
+    margin: 0 auto;
+    text-align: center;
+
+    .email-address {
+      background-color: #f4f4f4;
+      border: none;
+      color: #969696;
+      display: inline-block;
+      font-size: 1.3rem;
+      padding: 1rem;
+      vertical-align: top;
+      width: 225px;
+    }
+
+    .submit-btn{
+      background-color: $secondary-color;
+      border: 1px solid $secondary-color;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 600;
+      height: 35px;
+      padding: 1rem;
+      vertical-align: top;
+      width: 75px;
+
+      &:hover {
+        background-color: #ffffff;
+        color: $secondary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .footer-menu-wp {
+    font-size: 0;
+    padding-top: 2rem;
+    text-align: center;
+
+    .footer-list {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+
+      @media screen and (min-width: $md-min-width) {
+        width: 50%;
+        display: inline-block;
+      }
+
+      .footer-menu-item {
+        line-height: 2.5rem;
+
+        a {
+          font-family: didot;
+          text-decoration: none;
+          &:visited, &:visited,  &:active, &:link {
+            color: #000000;
+          }
+        }
+
+        &:hover {
+          color: $secondary-color;
+          cursor: pointer;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .social-icons {
+      margin-bottom: 2rem;
+      text-align: center;
+      width: 100%;
+      @media screen and (min-width: $md-min-width) {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+  }
+
+  .copyright-wp {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+
+    .copyright {
+      font-weight: 600;
+    }
+
+    .roswell {
+      color: #969696;
+      font-weight: 300;
+      a {
+        &:visited, &:visited,  &:active, &:link {
+          color: #969696;
+        }
+      }
+    }
+  }
+}

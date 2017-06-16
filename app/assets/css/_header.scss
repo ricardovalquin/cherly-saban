@@ -78,30 +78,7 @@ header {
           }
         }
       }
-
-      .social-icons {
-        display: inline-block;
-        font-size: 1.2rem;
-        text-align: right;
-        width: 25%;
-
-        a {
-          .social-icon {
-            color: $light-gray-text-color;
-            padding-left: 1rem;
-          }
-
-          &:hover {
-            cursor: pointer;
-
-            i {
-              color: $secondary-color;
-            }
-          }
-        }
-      }
     }
-
     .mobile-buttons-wp {
       display: inline-block;
       font-size: 1.4rem;
@@ -122,6 +99,28 @@ header {
 
       .cart-wp {
         padding-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.social-icons {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-align: right;
+  width: 25%;
+
+  a {
+    .social-icon {
+      color: $light-gray-text-color;
+      padding-left: 1rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      i {
+        color: $secondary-color;
       }
     }
   }

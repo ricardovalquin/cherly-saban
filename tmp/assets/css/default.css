@@ -807,26 +807,6 @@ header .header-wp .desktop-buttons-wp .menu-wp .menu-list .menu-item .menu-title
   font-family: didot;
 }
 
-header .header-wp .desktop-buttons-wp .social-icons {
-  display: inline-block;
-  font-size: 1.2rem;
-  text-align: right;
-  width: 25%;
-}
-
-header .header-wp .desktop-buttons-wp .social-icons a .social-icon {
-  color: #43474a;
-  padding-left: 1rem;
-}
-
-header .header-wp .desktop-buttons-wp .social-icons a:hover {
-  cursor: pointer;
-}
-
-header .header-wp .desktop-buttons-wp .social-icons a:hover i {
-  color: #9a004f;
-}
-
 header .header-wp .mobile-buttons-wp {
   display: inline-block;
   font-size: 1.4rem;
@@ -855,6 +835,143 @@ header .header-wp .mobile-buttons-wp {
 
 header .header-wp .mobile-buttons-wp .cart-wp {
   padding-right: 1.5rem;
+}
+
+.social-icons {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-align: right;
+  width: 25%;
+}
+
+.social-icons a .social-icon {
+  color: #43474a;
+  padding-left: 1rem;
+}
+
+.social-icons a:hover {
+  cursor: pointer;
+}
+
+.social-icons a:hover i {
+  color: #9a004f;
+}
+
+footer {
+  border-top: 4px solid #9a004f;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding-top: 4rem;
+  }
+}
+
+footer .subscribe-wp {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .subscribe-wp .email-address {
+  background-color: #f4f4f4;
+  border: none;
+  color: #969696;
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 1rem;
+  vertical-align: top;
+  width: 225px;
+}
+
+footer .subscribe-wp .submit-btn {
+  background-color: #9a004f;
+  border: 1px solid #9a004f;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 35px;
+  padding: 1rem;
+  vertical-align: top;
+  width: 75px;
+}
+
+footer .subscribe-wp .submit-btn:hover {
+  background-color: #ffffff;
+  color: #9a004f;
+  cursor: pointer;
+}
+
+footer .footer-menu-wp {
+  font-size: 0;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+footer .footer-menu-wp .footer-list {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-menu-wp .footer-list {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+footer .footer-menu-wp .footer-list .footer-menu-item {
+  line-height: 2.5rem;
+}
+
+footer .footer-menu-wp .footer-list .footer-menu-item a {
+  font-family: didot;
+  text-decoration: none;
+}
+
+footer .footer-menu-wp .footer-list .footer-menu-item a:visited, footer .footer-menu-wp .footer-list .footer-menu-item a:visited, footer .footer-menu-wp .footer-list .footer-menu-item a:active, footer .footer-menu-wp .footer-list .footer-menu-item a:link {
+  color: #000000;
+}
+
+footer .footer-menu-wp .footer-list .footer-menu-item:hover {
+  color: #9a004f;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer .footer-menu-wp .social-icons {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-menu-wp .social-icons {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+footer .copyright-wp {
+  font-size: 1.2rem;
+  line-height: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+footer .copyright-wp .copyright {
+  font-weight: 600;
+}
+
+footer .copyright-wp .roswell {
+  color: #969696;
+  font-weight: 300;
+}
+
+footer .copyright-wp .roswell a:visited, footer .copyright-wp .roswell a:visited, footer .copyright-wp .roswell a:active, footer .copyright-wp .roswell a:link {
+  color: #969696;
 }
 
 /*# sourceMappingURL=default.css.map */
