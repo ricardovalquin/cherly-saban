@@ -11,7 +11,7 @@ header {
       width: 60%;
       @media screen and (min-width: $lg-min-width) {
         display: inline-block;
-        width: 50%;
+        width: 40%;
       }
       img {
         width: 100%;
@@ -24,18 +24,24 @@ header {
       vertical-align: middle;
       @media screen and (min-width: $lg-min-width) {
         display: inline-block;
-        width: 50%;
+        width: 60%;
       }
 
       .user-cta {
         text-align: right;
         margin-bottom: 2rem;
+
         .user-actions {
           .action {
             display: inline-block;
             font-size: 1.2rem;
             font-weight: 700;
-            margin-right: 2rem;
+            margin-right: 4rem;
+
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
+            }
 
             &.cart {
               margin-right: 0;
@@ -45,15 +51,30 @@ header {
       }
 
       .menu-wp {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-weight: 700;
         display: inline-block;
-        width: 70%;
+        width: 75%;
+
+        @media screen and (min-width: $xl-min-width) {
+          font-size: 1.2rem;
+        }
 
         .menu-list {
           text-align: right;
 
           .menu-item {
             display: inline-block;
+            padding-right: 2rem;
+
+            &:hover {
+              color: $secondary-color;
+              cursor: pointer;
+            }
+
+            .menu-title-text {
+              font-family: didot;
+            }
           }
         }
       }
@@ -62,7 +83,7 @@ header {
         display: inline-block;
         font-size: 1.2rem;
         text-align: right;
-        width: 30%;
+        width: 25%;
 
         a {
           .social-icon {
@@ -72,6 +93,10 @@ header {
 
           &:hover {
             cursor: pointer;
+
+            i {
+              color: $secondary-color;
+            }
           }
         }
       }
