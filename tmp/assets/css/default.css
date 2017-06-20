@@ -1141,6 +1141,14 @@ footer .copyright-wp .roswell a:hover {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .product-visualizer .mobile-product-viewer {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .product-visualizer .mobile-product-viewer {
     display: none;
@@ -1190,11 +1198,21 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 992px) {
   .product-visualizer .desktop-product-viewer {
     display: inline-block;
+    width: 50%;
+    vertical-align: middle;
   }
 }
 
 .product-visualizer .controls-section {
-  margin: 3rem 0;
+  margin: 3.5rem 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .product-visualizer .controls-section {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
 }
 
 .product-visualizer .controls-section .product-name {
@@ -1219,6 +1237,18 @@ footer .copyright-wp .roswell a:hover {
   width: 50%;
 }
 
+@media screen and (min-width: 544px) {
+  .product-visualizer .controls-section .control-wp .control-title {
+    width: calc(100% - 25rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-visualizer .controls-section .control-wp .control-title {
+    width: 35%;
+  }
+}
+
 .product-visualizer .controls-section .control-wp .control-title .control-text {
   font-size: 1.2rem;
 }
@@ -1227,6 +1257,18 @@ footer .copyright-wp .roswell a:hover {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
+}
+
+@media screen and (min-width: 544px) {
+  .product-visualizer .controls-section .control-wp .control {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-visualizer .controls-section .control-wp .control {
+    width: 65%;
+  }
 }
 
 .product-visualizer .controls-section .control-wp .control .dropdown-selector {
@@ -1269,6 +1311,41 @@ footer .copyright-wp .roswell a:hover {
   background-color: #626262;
 }
 
+.product-visualizer .controls-section .quantity .control-title {
+  vertical-align: top;
+}
+
+.product-visualizer .controls-section .quantity .control-title.quantity-title {
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity .control-title.quantity-title {
+    display: inline-block;
+    width: calc(100% - 25rem);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-visualizer .controls-section .quantity .control-title.quantity-title {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity .control {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity .quantity-wp {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+  }
+}
+
 .product-visualizer .controls-section .quantity .quantity-wp .quantity-btn {
   border: 1px solid #cdcdcd;
   display: inline-block;
@@ -1283,13 +1360,29 @@ footer .copyright-wp .roswell a:hover {
   width: 3rem;
 }
 
-.product-visualizer .controls-section .quantity .quantity-wp .quantity-btn.hover {
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity .quantity-wp .quantity-btn {
+    height: 3.3rem;
+  }
+}
+
+.product-visualizer .controls-section .quantity .quantity-wp .quantity-btn:hover {
   cursor: pointer;
 }
 
 .product-visualizer .controls-section .quantity .quantity-wp .quantity-btn.inc {
   padding-left: 8px;
   font-size: 1.8rem;
+}
+
+.product-visualizer .controls-section .quantity .quantity-wp input[type="number"]::-webkit-outer-spin-button,
+.product-visualizer .controls-section .quantity .quantity-wp input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-visualizer .controls-section .quantity .quantity-wp input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .product-visualizer .controls-section .quantity .quantity-wp .quantity-input {
@@ -1302,9 +1395,26 @@ footer .copyright-wp .roswell a:hover {
   width: 3rem;
 }
 
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity .quantity-wp .quantity-input {
+    height: 3.3rem;
+  }
+}
+
 .product-visualizer .controls-section .add-to-cart-wp {
   text-align: right;
   margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .add-to-cart-wp {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: top;
+    width: 60%;
+  }
 }
 
 .product-visualizer .controls-section .add-to-cart-wp .add-to-cart-btn {
@@ -1314,7 +1424,16 @@ footer .copyright-wp .roswell a:hover {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0.7rem 1rem;
-  width: 150px;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .add-to-cart-wp .add-to-cart-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 150px;
+  }
 }
 
 .product-visualizer .controls-section .add-to-cart-wp .add-to-cart-btn:hover {
@@ -1356,6 +1475,16 @@ footer .copyright-wp .roswell a:hover {
   margin-bottom: 2rem;
 }
 
+.also-like-section {
+  padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .also-like-section {
+    padding-top: 4rem;
+  }
+}
+
 .also-like-section .also-like-title {
   font-family: didot;
   font-size: 1.8rem;
@@ -1364,6 +1493,34 @@ footer .copyright-wp .roswell a:hover {
 
 .also-like-section .also-like-grid-wp {
   margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .also-like-section .also-like-grid-wp {
+    margin-bottom: 6rem;
+  }
+}
+
+.also-like-section .also-like-grid-wp .grid-wp .grid-wp-inner {
+  text-align: center;
+}
+
+@media screen and (min-width: 544px) {
+  .also-like-section .also-like-grid-wp .product-wp {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .also-like-section .also-like-grid-wp .product-wp {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .also-like-section .also-like-grid-wp .product-wp {
+    margin-right: 4rem;
+  }
 }
 
 .also-like-section .also-like-grid-wp .product-wp .text-wp {

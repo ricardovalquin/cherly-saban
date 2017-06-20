@@ -2,6 +2,11 @@
 
   .mobile-product-viewer {
     display: block;
+    @media screen and (min-width: $md-min-width) {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+    }
     @media screen and (min-width: $lg-min-width) {
       display: none;
     }
@@ -47,11 +52,18 @@
     display: none;
     @media screen and (min-width: $lg-min-width) {
       display: inline-block;
+      width: 50%;
+      vertical-align: middle;
     }
   }
 
   .controls-section {
-    margin: 3rem 0;
+    margin: 3.5rem 0 2rem;
+    @media screen and (min-width: $md-min-width) {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+    }
 
     .product-name {
       font-family: didot;
@@ -72,6 +84,12 @@
         display: inline-block;
         vertical-align: middle;
         width: 50%;
+        @media screen and (min-width: $sm-min-width) {
+          width: calc(100% - 25rem);
+        }
+        @media screen and (min-width: $xl-min-width) {
+          width: 35%;
+        }
 
         .control-text {
           font-size: 1.2rem;
@@ -82,6 +100,13 @@
         display: inline-block;
         vertical-align: middle;
         width: 50%;
+
+        @media screen and (min-width: $sm-min-width) {
+          width: 25rem;
+        }
+        @media screen and (min-width: $xl-min-width) {
+          width: 65%;
+        }
 
         .dropdown-selector {
           border: 1px solid #cccccc;
@@ -130,7 +155,35 @@
     }
 
     .quantity {
+
+      .control-title {
+        vertical-align: top;
+
+        &.quantity-title {
+          padding-top: 1rem;
+          @media screen and (min-width: $lg-min-width) {
+            display: inline-block;
+            width: calc(100% - 25rem);
+          }
+          @media screen and (min-width: $xl-min-width) {
+            width: 35%;
+          }
+        }
+      }
+
+      .control {
+        @media screen and (min-width: $lg-min-width) {
+          display: inline-block;
+        }
+      }
+
       .quantity-wp {
+        @media screen and (min-width: $lg-min-width) {
+          display: inline-block;
+          vertical-align: top;
+          width: 40%;
+        }
+
         .quantity-btn {
           border: 1px solid #cdcdcd;
           display: inline-block;
@@ -144,7 +197,11 @@
           text-align: center;
           width: 3rem;
 
-          &.hover {
+          @media screen and (min-width: $lg-min-width) {
+            height: 3.3rem;
+          }
+
+          &:hover {
             cursor: pointer;
           }
 
@@ -154,6 +211,14 @@
           }
         }
 
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type="number"] {
+          -moz-appearance: textfield;
+        }
         .quantity-input {
           border: none;
           border-top: 1px solid #cdcdcd;
@@ -162,6 +227,9 @@
           height: 3rem;
           text-align: center;
           width: 3rem;
+          @media screen and (min-width: $lg-min-width) {
+            height: 3.3rem;
+          }
         }
       }
     }
@@ -169,6 +237,15 @@
     .add-to-cart-wp {
       text-align: right;
       margin-bottom: 2.5rem;
+      margin-top: 1.5rem;
+
+      @media screen and (min-width: $lg-min-width) {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+        vertical-align: top;
+        width: 60%;
+      }
 
       .add-to-cart-btn {
         background-color: $secondary-color;
@@ -177,7 +254,14 @@
         font-size: 1.2rem;
         font-weight: 600;
         padding: 0.7rem 1rem;
-        width: 150px;
+        max-width: 200px;
+        width: 100%;
+
+        @media screen and (min-width: $lg-min-width) {
+          display: inline-block;
+          vertical-align: middle;
+          width: 150px;
+        }
 
         &:hover {
           background-color: #ffffff;
@@ -226,6 +310,11 @@
 }
 
 .also-like-section {
+  padding-top: 2rem;
+
+  @media screen and (min-width: $md-min-width) {
+    padding-top: 4rem;
+  }
 
   .also-like-title {
     font-family: didot;
@@ -235,8 +324,27 @@
 
   .also-like-grid-wp {
     margin-bottom: 4rem;
+    @media screen and (min-width: $md-min-width) {
+      margin-bottom: 6rem;
+    }
+
+    .grid-wp {
+      .grid-wp-inner {
+        text-align: center;
+      }
+    }
 
     .product-wp {
+      @media screen and (min-width: $sm-min-width) {
+        width: 35%;
+      }
+      @media screen and (min-width: $md-min-width) {
+        width: 20%;
+      }
+      @media screen and (min-width: $lg-min-width) {
+        margin-right: 4rem;
+      }
+
       .text-wp {
         font-size: 1.5rem;
       }
