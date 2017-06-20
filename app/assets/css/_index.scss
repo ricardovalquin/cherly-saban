@@ -1,8 +1,235 @@
-.go-to-listing {
-  width: 200px;
-  height: 200px;
-  margin: 4rem auto;
-  a {
-    font-size: 2rem;
+.hero-section {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .hero-img-wp {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .hero-text-wp {
+    display: none;
+
+    @media screen and (min-width: $lg-min-width) {
+      display: block;
+      position: absolute;
+      bottom: 18rem;
+      z-index: 1;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      bottom: 23rem;
+    }
+
+    .hero-title {
+      color: #464A4F;
+      font-family: didot;
+      font-size: 4rem;
+      font-style: italic;
+      font-weight: lighter;
+      margin-bottom: 2rem;
+    }
+
+    .hero-description {
+      color: #464A4F;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      max-width: 420px;
+    }
+  }
+
+  .button-wp {
+    bottom: 5rem;
+    font-size: 10px;
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (min-width: $md-min-width) {
+      bottom: 9rem;
+    }
+    @media screen and (min-width: $lg-min-width) {
+      bottom: 13rem;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      bottom: 18rem;
+    }
+
+    .hero-btn {
+      background-color: $secondary-color;
+      border: 1px solid $secondary-color;
+      color: #ffffff;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+      width: 110px;
+
+      &:hover {
+        background-color: #ffffff;
+        color: $secondary-color;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+}
+
+.categories-section {
+  padding: 2rem 0;
+  text-align: center;
+
+  .category-wp {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 50%;
+
+    &:nth-of-type(2) {
+      text-align: right;
+      .category {
+        margin-left: 3%;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .category {
+      border: 1px solid #cccccc;
+      padding: 1rem 0.2rem 0;
+      text-align: center;
+      width: 97%;
+
+      .category-title {
+        font-family: didot;
+        font-size: 1.2rem;
+
+        @media screen and (min-width: $sm-min-width) {
+          font-size: 1.5rem;
+        }
+        @media screen and (min-width: $md-min-width) {
+          font-size: 1.7rem;
+        }
+        @media screen and (min-width: $lg-min-width) {
+          font-size: 2rem;
+        }
+      }
+
+      .category-img-wp {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
+
+.follow-us-section {
+  margin-bottom: 2rem;
+  .follow-text {
+    display: inline-block;
+    font-family: didot;
+    font-size: 1rem;
+    width: 50%;
+
+
+    @media screen and (min-width: $sm-min-width) {
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width: $md-min-width) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: $lg-min-width) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .instagram-user {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: right;
+    width: 50%;
+    @media screen and (min-width: $sm-min-width) {
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width: $md-min-width) {
+      font-size: 1.5rem;
+    }
+    @media screen and (min-width: $lg-min-width) {
+      font-size: 1.8rem;
+    }
+
+    .social-icon {
+      margin-right: 7px;
+    }
+
+    a {
+      &:visited, &:visited, &:active, &:link {
+        color: #000;
+        text-decoration: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.other-products-section {
+  margin-bottom: 2rem;
+
+  .other-products-grid-wp {
+    .grid-wp {
+      .grid-wp-inner {
+        text-align: center !important;
+        a {
+          &:nth-of-type(3n+3) {
+            .product-wp {
+              margin-right: 0;
+            }
+          }
+
+          @media screen and (min-width: $md-min-width) {
+            &:nth-of-type(3n+3) {
+              .product-wp {
+                margin-right: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+
+      .product-wp {
+        border: 1px solid #cccccc;
+        margin: 1.2rem auto 0;
+        margin-right: 1.2rem;
+        width: 30%;
+
+        @media screen and (min-width: $sm-min-width) {
+          width: 31%;
+        }
+        @media screen and (min-width: $md-min-width) {
+          width: 32%;
+          margin-right: 1.4rem;
+          min-height: 140px;
+        }
+        @media screen and (min-width: $md-min-width) {
+          width: 14%;
+        }
+        @media screen and (min-width: $md-min-width) {
+          width: 15%;
+        }
+
+        .img-wp {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 }
