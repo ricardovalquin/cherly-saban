@@ -278,6 +278,9 @@
 
     .share-section {
       margin: 3rem 0 1rem;
+      @media screen and (min-width: $lg-min-width) {
+        margin: 3.5rem 0 1rem;
+      }
 
       .share-title {
         display: inline-block;
@@ -290,6 +293,9 @@
         display: inline-block;
         font-size: 1.2rem;
         margin-bottom: 2rem;
+        @media screen and (min-width: $lg-min-width) {
+          margin-bottom: 3.5rem;
+        }
 
         .social-icon {
           color: $secondary-color;
@@ -305,6 +311,10 @@
         font-size: 1.2rem;
         line-height: 2rem;
         margin-bottom: 2rem;
+        @media screen and (min-width: $lg-min-width) {
+          line-height: 2.5rem;
+          margin-bottom: 3rem;
+        }
       }
 
     }

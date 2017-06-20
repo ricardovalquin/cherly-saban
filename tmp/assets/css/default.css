@@ -1453,6 +1453,12 @@ footer .copyright-wp .roswell a:hover {
   margin: 3rem 0 1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .share-section {
+    margin: 3.5rem 0 1rem;
+  }
+}
+
 .product-visualizer .controls-section .share-section .share-title {
   display: inline-block;
   font-size: 1.2rem;
@@ -1464,6 +1470,12 @@ footer .copyright-wp .roswell a:hover {
   display: inline-block;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .share-section .share-icons {
+    margin-bottom: 3.5rem;
+  }
 }
 
 .product-visualizer .controls-section .share-section .share-icons .social-icon {
@@ -1479,6 +1491,13 @@ footer .copyright-wp .roswell a:hover {
   font-size: 1.2rem;
   line-height: 2rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .share-section .share-description {
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .also-like-section {
