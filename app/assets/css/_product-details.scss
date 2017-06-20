@@ -155,6 +155,9 @@
     }
 
     .quantity {
+      @media screen and (min-width: $lg-min-width) {
+        margin-bottom: 3rem;
+      }
 
       .control-title {
         vertical-align: top;

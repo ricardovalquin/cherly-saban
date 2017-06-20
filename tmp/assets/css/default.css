@@ -1311,6 +1311,12 @@ footer .copyright-wp .roswell a:hover {
   background-color: #626262;
 }
 
+@media screen and (min-width: 992px) {
+  .product-visualizer .controls-section .quantity {
+    margin-bottom: 3rem;
+  }
+}
+
 .product-visualizer .controls-section .quantity .control-title {
   vertical-align: top;
 }
