@@ -1844,6 +1844,24 @@ footer .copyright-wp .roswell a:hover {
   font-weight: lighter;
 }
 
+@media screen and (min-width: 544px) {
+  .general-view-header .page-title .content-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .general-view-header .page-title .content-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .general-view-header .page-title .content-title {
+    font-size: 2.5rem;
+  }
+}
+
 .content-block {
   font-size: 1.3rem;
   line-height: 2rem;
@@ -1876,6 +1894,30 @@ footer .copyright-wp .roswell a:hover {
   line-height: 2.2rem;
 }
 
+@media screen and (min-width: 544px) {
+  .content-section .h2-content-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .h2-content-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .h2-content-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .img-wp {
+    margin-bottom: 2rem;
+  }
+}
+
 .content-section .img-wp img {
   width: 100%;
 }
@@ -1886,6 +1928,12 @@ footer .copyright-wp .roswell a:hover {
 
 .content-section .img-wp.half-width-image img {
   width: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .img-wp.right-img {
+    float: right;
+  }
 }
 
 .content-section .right-image-content-wp {
@@ -1913,6 +1961,24 @@ footer .copyright-wp .roswell a:hover {
   line-height: 2.2rem;
 }
 
+@media screen and (min-width: 544px) {
+  .content-section .content-wp .h3-content-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .content-wp .h3-content-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .content-wp .h3-content-title {
+    font-size: 2.1rem;
+  }
+}
+
 .content-section .content-wp .numbered-content-list {
   margin: 1rem 0 2rem;
   padding-left: 2rem;
@@ -1930,11 +1996,47 @@ footer .copyright-wp .roswell a:hover {
   line-height: 2.2rem;
 }
 
+@media screen and (min-width: 544px) {
+  .content-section .content-wp .h4-content-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .content-wp .h4-content-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .content-wp .h4-content-title {
+    font-size: 1.9rem;
+  }
+}
+
 .content-section .content-wp .block-quote .quote {
   font-family: didot;
   font-size: 1.3rem;
   font-style: italic;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 544px) {
+  .content-section .content-wp .block-quote .quote {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .content-wp .block-quote .quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .content-wp .block-quote .quote {
+    font-size: 1.7rem;
+  }
 }
 
 .content-section .content-wp .block-quote .quote-owner {
@@ -1944,10 +2046,74 @@ footer .copyright-wp .roswell a:hover {
   margin: 0.5rem 0 1rem;
 }
 
+@media screen and (min-width: 544px) {
+  .content-section .content-wp .block-quote .quote-owner {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .content-wp .block-quote .quote-owner {
+    font-size: 1.3rem;
+  }
+}
+
+.content-section .two-columns-wp {
+  margin: 4rem 0 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .two-columns-wp .left-content-wp {
+    display: inline-block;
+    padding-right: 1rem;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .two-columns-wp .left-content-wp .content-block {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .two-columns-wp .right-content-wp {
+    display: inline-block;
+    padding-left: 1rem;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .two-columns-wp .right-content-wp .content-block {
+    margin-top: 0;
+  }
+}
+
 .content-section .h5-content-title {
   font-size: 1.2rem;
   margin: 2rem 0 1rem;
   line-height: 2.2rem;
+}
+
+@media screen and (min-width: 544px) {
+  .content-section .h5-content-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .h5-content-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .h5-content-title {
+    font-size: 1.6rem;
+  }
 }
 
 .content-section .h6-content-title {
@@ -1956,8 +2122,41 @@ footer .copyright-wp .roswell a:hover {
   line-height: 2.2rem;
 }
 
+@media screen and (min-width: 544px) {
+  .content-section .h6-content-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .h6-content-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .h6-content-title {
+    font-size: 1.5rem;
+  }
+}
+
 .contact-section {
   color: #2F3130;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section .contact-info-wp {
+    display: inline-block;
+    padding-right: 1rem;
+    vertical-align: top;
+    width: 50%;
+  }
 }
 
 .contact-section .contact-info-wp .contact-info-title {
@@ -1967,13 +2166,49 @@ footer .copyright-wp .roswell a:hover {
   line-height: 2.2rem;
 }
 
+@media screen and (min-width: 544px) {
+  .contact-section .contact-info-wp .contact-info-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .contact-info-wp .contact-info-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section .contact-info-wp .contact-info-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+}
+
 .contact-section .contact-info-wp .contact-data-list {
   margin-left: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .contact-section .contact-info-wp .contact-data-list .contact-item {
   font-size: 1.2rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 544px) {
+  .contact-section .contact-info-wp .contact-data-list .contact-item {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .contact-info-wp .contact-data-list .contact-item {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 }
 
 .contact-section .contact-info-wp .contact-data-list .contact-item.address-item {
@@ -1989,6 +2224,15 @@ footer .copyright-wp .roswell a:hover {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 992px) {
+  .contact-section .form-wp {
+    display: inline-block;
+    padding-left: 1rem;
+    vertical-align: top;
+    width: 50%;
+  }
+}
+
 .contact-section .form-wp input, .contact-section .form-wp textarea {
   border: 1px solid #cccccc;
   color: #000000;
@@ -1997,6 +2241,18 @@ footer .copyright-wp .roswell a:hover {
   margin-bottom: 1rem;
   padding: 7px;
   width: 100%;
+}
+
+@media screen and (min-width: 544px) {
+  .contact-section .form-wp input, .contact-section .form-wp textarea {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section .form-wp input, .contact-section .form-wp textarea {
+    font-size: 1.3rem;
+  }
 }
 
 .contact-section .form-wp textarea {
@@ -2047,6 +2303,7 @@ footer .copyright-wp .roswell a:hover {
 .contact-section .form-wp .submit-btn-wp .submit-btn:hover {
   background-color: #ffffff;
   color: #9a004f;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=default.css.map */
