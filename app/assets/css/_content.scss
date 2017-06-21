@@ -34,6 +34,10 @@
       @media screen and (min-width: $lg-min-width) {
         font-size: 2.5rem;
       }
+      @media screen and (min-width: $xl-min-width) {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+      }
     }
   }
 }
@@ -42,6 +46,12 @@
   font-size: 1.3rem;
   line-height: 2rem;
   margin: 1rem 0;
+  @media screen and (min-width: $lg-min-width) {
+    font-size: 1.6rem;
+  }
+  @media screen and (min-width: $xl-min-width) {
+    font-size: 1.5rem;
+  }
 }
 
 .content-section {
@@ -49,7 +59,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: didot;
-    font-weight: lighter;
+    font-weight: 300;
   }
 
   .bolded-text {
@@ -75,6 +85,11 @@
     }
     @media screen and (min-width: $lg-min-width) {
       font-size: 2.2rem;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      font-size: 2.8rem;
+      line-height: 3.5rem;
+      margin: 1.5rem 0;
     }
   }
 
@@ -137,6 +152,11 @@
       @media screen and (min-width: $lg-min-width) {
         font-size: 2.1rem;
       }
+      @media screen and (min-width: $xl-min-width) {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin: 1.5rem 0;
+      }
     }
 
     .numbered-content-list {
@@ -163,6 +183,11 @@
       @media screen and (min-width: $lg-min-width) {
         font-size: 1.9rem;
       }
+      @media screen and (min-width: $xl-min-width) {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin: 1.5rem 0;
+      }
     }
 
     .block-quote {
@@ -179,6 +204,11 @@
         }
         @media screen and (min-width: $lg-min-width) {
           font-size: 1.7rem;
+        }
+        @media screen and (min-width: $xl-min-width) {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+          margin: 1.5rem 0 0;
         }
       }
 
@@ -242,6 +272,11 @@
     @media screen and (min-width: $lg-min-width) {
       font-size: 1.6rem;
     }
+    @media screen and (min-width: $xl-min-width) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      margin: 1.5rem 0;
+    }
   }
 
   .h6-content-title {
@@ -256,6 +291,11 @@
     }
     @media screen and (min-width: $lg-min-width) {
       font-size: 1.5rem;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      margin: 1.5rem 0;
     }
   }
 }
@@ -288,6 +328,10 @@
       @media screen and (min-width: $lg-min-width) {
         font-size: 1.8rem;
         margin-top: 0;
+      }
+      @media screen and (min-width: $xl-min-width) {
+        font-size: 2rem;
+        line-height: 3rem;
       }
     }
 
