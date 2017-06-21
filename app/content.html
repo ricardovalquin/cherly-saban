@@ -41,7 +41,7 @@
         tenetur ullam voluptatem voluptatibus. Consequatur magnam odio voluptate!</p>
       <h2 class="h2-content-title">H2 Heading with Copy and Bulleted List</h2>
       <div class="right-image-content-wp">
-        <div class="img-wp">
+        <div class="img-wp half-width-image">
           <img src="./assets/img/girl-table.png" alt="content image">
         </div>
         <div class="left-content-text">
@@ -67,13 +67,13 @@
         <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, atque commodi,
           consequuntur fuga fugiat iure laboriosam magni minima molestiae nisi non obcaecati perferendis quae quaerat
           qui sequi soluta ullam vel.</p>
-        <ul class="numbered-content-list">
+        <ol class="numbered-content-list">
           <li class="numbered-item">Praesent feugiat consequat ex, nec posuere quqm vulputate a.</li>
           <li class="numbered-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci perspiciatis quas
             repellat? Ab architecto aspernatur assumenda atque dolor enim, ex exercitationem iste itaque, laboriosam
             nobis optio, perferendis quaerat repellendus totam.
           </li>
-        </ul>
+        </ol>
       </div>
       <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, aspernatur assumenda
         autem consectetur culpa earum error et eum inventore iste iure, laboriosam magni, necessitatibus sapiente sint
@@ -89,21 +89,23 @@
           adipisci consequuntur dolore, doloremque error facere iure natus nulla officia officiis qui ratione repellat
           sit suscipit ullam! Aspernatur eaque fugiat placeat!</p>
         <div class="block-quote">
-          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa, cumque debitis
+          <p class="quote">"Block quote style id dui ac nulla vestibulum sagittis., consectetur adipisicing elit. Beatae culpa, cumque debitis
             dolorum eum facere fugit ipsum iusto minus nobis praesentium quisquam quo recusandae reprehenderit sapiente
-            suscipit vel veniam voluptatum.</p>
-          <span class="cite-name">CITE-NAME-STYLE SMITH</span>
+            suscipit vel veniam voluptatum."</p>
+          <span class="quote-owner">CITE-NAME-STYLE SMITH</span>
         </div>
       </div>
       <hr/>
       <div class="two-columns-wp">
-        <div class="right-content-wp">
+        <div class="left-content-wp">
           <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt, ea esse et,
             illo, ipsum modi necessitatibus non quidem quos rem reprehenderit vel voluptatum? Enim quidem sint tempore!
             Vitae, voluptatum.</p>
         </div>
         <div class="right-content-wp">
-          <img src="./assets/img/shirt.png" alt="right image">
+          <div class="img-wp">
+            <img src="./assets/img/shirt.png" alt="right image">
+          </div>
         </div>
       </div>
       <h5 class="h5-content-title">H5 Heading with Copy and two columns of copy</h5>
@@ -111,7 +113,7 @@
         dicta eos est, molestias, nisi quasi repellendus sapiente, sed sequi similique sint totam. Ad architecto in
         molestiae.</p>
       <div class="two-columns-wp">
-        <div class="right-content-wp">
+        <div class="left-content-wp">
           <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt, ea esse et,
             illo, ipsum modi necessitatibus non quidem quos rem reprehenderit vel voluptatum? Enim quidem sint tempore!
             Vitae, voluptatum.</p>
@@ -126,7 +128,7 @@
       <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum delectus deserunt
         dignissimos eaque enim excepturi exercitationem fugiat incidunt minima minus necessitatibus neque, non numquam
         omnis provident quia rem vel!</p>
-      <div class="img-wp">
+      <div class="img-wp half-width-image">
         <img src="./assets/img/crab.png" alt="centered image">
       </div>
       <p class="content-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem impedit
@@ -151,18 +153,21 @@
         <ul class="contact-data-list">
           <li class="contact-item"><i class="contact-item-icon fa fa-phone"></i> 555-555-5555</li>
           <li class="contact-item"><i class="contact-item-icon fa fa-paper-plane"></i> name@domain.com</li>
-          <li class="contact-item"><i class="contact-item-icon fa fa-map-marker"></i> 123 Smith Street <br/>unit 123 <br/>City,
-            State <br/>Zip
+          <li class="contact-item address-item"><i class="contact-item-icon fa fa-map-marker"></i>
+              123 Smith Street <br/>unit 123 <br/>City,
+              State <br/>Zip
           </li>
         </ul>
       </div>
       <div class="form-wp">
         <form action="">
-          <input type="text" id="name"/>
-          <input type="email" id="email"/>
-          <input type="text" id="phone"/>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="submit" value="SUBMIT">
+          <input type="text" id="name" placeholder="Name"/>
+          <input type="email" id="email" placeholder="Email"/>
+          <input type="text" id="phone" placeholder="Phone"/>
+          <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+          <div class="submit-btn-wp">
+            <input type="submit" value="SUBMIT" class="submit-btn">
+          </div>
         </form>
       </div>
     </div>

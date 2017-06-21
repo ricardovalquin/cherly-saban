@@ -1,0 +1,246 @@
+.general-view-header {
+  .breadcrumbs {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    ul {
+      li {
+        display: inline-block;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $lg-min-width) {
+      display: inline-block;
+    }
+
+    .content-title {
+      font-family: didot;
+      font-size: 2.2rem;
+      font-weight: lighter;
+    }
+  }
+}
+
+.content-block {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin: 1rem 0;
+}
+
+.content-section {
+  color: #2F3130;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: didot;
+    font-weight: lighter;
+  }
+
+  .bolded-text {
+    font-weight: 600;
+  }
+
+  .italic-text {
+    font-style: italic;
+  }
+
+  .linked-text {
+    color: $secondary-color;
+  }
+
+  .h2-content-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .img-wp {
+    img {
+      width: 100%;
+    }
+
+    &.half-width-image {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .right-image-content-wp {
+    margin: 2rem 0;
+
+    .left-content-text {
+      .content-list {
+        list-style-type: disc;
+        margin: 1rem 0;
+        padding-left: 2rem;
+
+        .content-item {
+          font-size: 1.2rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+
+  .full-width-img-wp {
+    img {
+      width: 100%;
+    }
+  }
+
+  .content-wp {
+    .h3-content-title {
+      font-size: 1.7rem;
+      margin: 2rem 0 1rem;
+      line-height: 2.2rem;
+    }
+
+    .numbered-content-list {
+      margin: 1rem 0 2rem;
+      padding-left: 2rem;
+
+      .numbered-item {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin: 3px 0;
+      }
+    }
+
+    .h4-content-title {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      line-height: 2.2rem;
+    }
+
+    .block-quote {
+      .quote {
+        font-family: didot;
+        font-size: 1.3rem;
+        font-style: italic;
+        line-height: 2rem;
+      }
+
+      .quote-owner {
+        display: inline-block;
+        font-family: didot;
+        font-size: 1.1rem;
+        margin: 0.5rem 0 1rem;
+      }
+    }
+  }
+
+  .two-columns-wp {
+    .right-content-wp {
+
+    }
+
+    .right-content-wp {
+
+    }
+  }
+
+  .h5-content-title {
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem;
+    line-height: 2.2rem;
+  }
+
+  .h6-content-title {
+    font-size: 1.1rem;
+    margin: 2rem 0 1rem;
+    line-height: 2.2rem;
+  }
+}
+
+.contact-section {
+  color: #2F3130;
+
+  .contact-info-wp {
+    .contact-info-title {
+      font-family: didot;
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+      line-height: 2.2rem;
+    }
+
+    .contact-data-list {
+      margin-left: 0.5rem;
+      .contact-item {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+        &.address-item {
+          padding-left: 2rem;
+          text-indent: -1rem;
+        }
+
+        .contact-item-icon {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .form-wp {
+    margin-bottom: 4rem;
+
+    input, textarea {
+      border: 1px solid #cccccc;
+      color: #000000;
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      padding: 7px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: #ccc;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #ccc;
+      opacity: 1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #ccc;
+      opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #ccc;
+    }
+    :-ms-input-placeholder { /* Microsoft Edge */
+      color: #ccc;
+    }
+
+    .submit-btn-wp {
+      text-align: right;
+
+      .submit-btn {
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-left: calc(100% - 80px);
+        width: 80px;
+
+        &:hover {
+          background-color: #ffffff;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
