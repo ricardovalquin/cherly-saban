@@ -16,14 +16,14 @@
 
   .page-title {
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     @media screen and (min-width: $lg-min-width) {
       display: inline-block;
     }
 
     .content-title {
       font-family: didot;
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: lighter;
       @media screen and (min-width: $sm-min-width) {
         font-size: 2.3rem;
@@ -35,7 +35,7 @@
         font-size: 2.5rem;
       }
       @media screen and (min-width: $xl-min-width) {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
         line-height: 4.5rem;
       }
     }
@@ -43,19 +43,27 @@
 }
 
 .content-block {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
   margin: 1rem 0;
+  @media screen and (min-width: $md-min-width) {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
   @media screen and (min-width: $lg-min-width) {
     font-size: 1.6rem;
+    line-height: 3rem;
   }
-  @media screen and (min-width: $xl-min-width) {
-    font-size: 1.5rem;
+
+  &.bottom-separator {
+    @media screen and (min-width: $xl-min-width) {
+      margin-bottom: 3rem;
+    }
   }
 }
 
 .content-section {
-  color: #2F3130;
+  color: #2c3134;
 
   h1, h2, h3, h4, h5, h6 {
     font-family: didot;
@@ -72,6 +80,10 @@
 
   .linked-text {
     color: $secondary-color;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .h2-content-title {
@@ -79,17 +91,19 @@
     line-height: 2.2rem;
     @media screen and (min-width: $sm-min-width) {
       font-size: 1.9rem;
+      line-height: 2.5rem;
     }
     @media screen and (min-width: $md-min-width) {
       font-size: 2rem;
     }
     @media screen and (min-width: $lg-min-width) {
       font-size: 2.2rem;
+      line-height: 2.7rem;
     }
     @media screen and (min-width: $xl-min-width) {
-      font-size: 2.8rem;
-      line-height: 3.5rem;
-      margin: 1.5rem 0;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      margin: 0;
     }
   }
 
@@ -116,23 +130,45 @@
   }
 
   .right-image-content-wp {
-    margin: 2rem 0;
+    margin: 1rem 0;
 
     .left-content-text {
       .content-list {
         list-style-type: disc;
         margin: 1rem 0;
         padding-left: 2rem;
-
+        @media screen and (min-width: $md-min-width) {
+          margin: 2.5rem 0;
+        }
+        @media screen and (min-width: $lg-min-width) {
+          margin: 3rem 0;
+        }
         .content-item {
           font-size: 1.2rem;
-          line-height: 2rem;
+          line-height: 2.5rem;
+          @media screen and (min-width: $md-min-width) {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+          }
+          @media screen and (min-width: $lg-min-width) {
+            font-size: 1.6rem;
+            line-height: 2.9rem;
+          }
         }
       }
     }
   }
 
   .full-width-img-wp {
+    @media screen and (min-width: $md-min-width) {
+      margin-bottom: 2.5rem;
+    }
+    @media screen and (min-width: $lg-min-width) {
+      margin-bottom: 3.5rem;
+    }
+    @media screen and (min-width: $xl-min-width) {
+      margin-bottom: 5.5rem;
+    }
     img {
       width: 100%;
     }
@@ -140,7 +176,7 @@
 
   .content-wp {
     .h3-content-title {
-      font-size: 1.7rem;
+      font-size: 1.65rem;
       margin: 2rem 0 1rem;
       line-height: 2.2rem;
       @media screen and (min-width: $sm-min-width) {
@@ -148,13 +184,15 @@
       }
       @media screen and (min-width: $md-min-width) {
         font-size: 1.9rem;
+        line-height: 2.6rem;
       }
       @media screen and (min-width: $lg-min-width) {
         font-size: 2.1rem;
+        line-height: 2.7rem;
       }
       @media screen and (min-width: $xl-min-width) {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
         margin: 1.5rem 0;
       }
     }
@@ -165,49 +203,64 @@
 
       .numbered-item {
         font-size: 1.2rem;
-        line-height: 1.6rem;
-        margin: 3px 0;
+        line-height: 1.8rem;
+        margin: 2px 0;
+        @media screen and (min-width: $md-min-width) {
+          font-size: 1.4rem;
+          line-height: 2rem;
+          margin: 2.5px 0;
+        }
+        @media screen and (min-width: $xl-min-width) {
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          margin: 3px 0;
+        }
       }
     }
 
     .h4-content-title {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 2rem 0 1rem;
-      line-height: 2.2rem;
+      line-height: 1.7rem;
       @media screen and (min-width: $sm-min-width) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
       }
       @media screen and (min-width: $md-min-width) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
       }
       @media screen and (min-width: $lg-min-width) {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
       }
       @media screen and (min-width: $xl-min-width) {
-        font-size: 2.2rem;
-        line-height: 3rem;
-        margin: 1.5rem 0;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin: 0;
       }
     }
 
     .block-quote {
       .quote {
         font-family: didot;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-style: italic;
-        line-height: 2rem;
+        line-height: 1.8rem;
         @media screen and (min-width: $sm-min-width) {
           font-size: 1.4rem;
         }
         @media screen and (min-width: $md-min-width) {
           font-size: 1.5rem;
+          line-height: 2rem;
         }
         @media screen and (min-width: $lg-min-width) {
           font-size: 1.7rem;
+          line-height: 2.5rem;
         }
         @media screen and (min-width: $xl-min-width) {
           font-size: 1.8rem;
-          line-height: 2.5rem;
+          line-height: 3.4rem;
           margin: 1.5rem 0 0;
         }
       }
@@ -216,7 +269,7 @@
         display: inline-block;
         font-family: didot;
         font-size: 1.1rem;
-        margin: 0.5rem 0 1rem;
+        margin: 1.6rem 0 1rem;
         @media screen and (min-width: $sm-min-width) {
           font-size: 1.2rem;
         }
@@ -226,9 +279,15 @@
       }
     }
   }
+  .quote-separator {
+    @media screen and (min-width: $xl-min-width) {
+      margin-bottom: 6rem;
+      margin-top: 5.5rem;
+    }
+  }
 
   .two-columns-wp {
-    margin: 4rem 0 2rem;
+    margin: 2rem 0 1rem;
     .left-content-wp {
       @media screen and (min-width: $lg-min-width) {
         display: inline-block;
@@ -240,6 +299,9 @@
       .content-block {
         @media screen and (min-width: $lg-min-width) {
           margin-top: 0;
+        }
+        @media screen and (min-width: $xl-min-width) {
+          margin-bottom: 0;
         }
       }
     }
@@ -260,7 +322,7 @@
   }
 
   .h5-content-title {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     margin: 2rem 0 1rem;
     line-height: 2.2rem;
     @media screen and (min-width: $sm-min-width) {
@@ -273,14 +335,14 @@
       font-size: 1.6rem;
     }
     @media screen and (min-width: $xl-min-width) {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       line-height: 3rem;
-      margin: 1.5rem 0;
+      margin: 0;
     }
   }
 
   .h6-content-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 2rem 0 1rem;
     line-height: 2.2rem;
     @media screen and (min-width: $sm-min-width) {
@@ -293,17 +355,20 @@
       font-size: 1.5rem;
     }
     @media screen and (min-width: $xl-min-width) {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       line-height: 2.8rem;
-      margin: 1.5rem 0;
+      margin: 3.3rem 0 0;
     }
   }
 }
 
 .contact-section {
-  color: #2F3130;
+  color: #2c3134;
   @media screen and (min-width: $lg-min-width) {
     margin-top: 4rem;
+  }
+  @media screen and (min-width: $xl-min-width) {
+    margin-top: 6rem;
   }
 
   .contact-info-wp {
@@ -316,23 +381,31 @@
 
     .contact-info-title {
       font-family: didot;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 2rem 0 1rem;
-      line-height: 2.2rem;
+      line-height: 1.5rem;
       @media screen and (min-width: $sm-min-width) {
         font-size: 1.5rem;
+        line-height: 2rem;
       }
       @media screen and (min-width: $md-min-width) {
         font-size: 1.6rem;
+        line-height: 2.2rem;
       }
       @media screen and (min-width: $lg-min-width) {
         font-size: 1.8rem;
+        line-height: 2.5rem;
         margin-top: 0;
       }
       @media screen and (min-width: $xl-min-width) {
-        font-size: 2rem;
+        font-size: 2.2rem;
         line-height: 3rem;
+        margin-bottom: 0;
       }
+    }
+
+    .content-block {
+      margin-top: 0;
     }
 
     .contact-data-list {
@@ -348,17 +421,29 @@
           line-height: 1.7rem;
         }
         @media screen and (min-width: $md-min-width) {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           line-height: 2rem;
+        }
+        @media screen and (min-width: $lg-min-width) {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
         }
 
         &.address-item {
           padding-left: 2rem;
           text-indent: -1rem;
+          @media screen and (min-width: $lg-min-width) {
+            padding-left: 4.2rem;
+            text-indent: -2.2rem;
+          }
         }
 
         .contact-item-icon {
           margin-right: 5px;
+          @media screen and (min-width: $lg-min-width) {
+            font-size: 2.4rem;
+            margin-right: 1.5rem;
+          }
         }
       }
     }
@@ -385,7 +470,10 @@
         font-size: 1.2rem;
       }
       @media screen and (min-width: $md-min-width) {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        font-style: italic;
       }
     }
 
@@ -419,6 +507,7 @@
         border: 1px solid $secondary-color;
         color: #ffffff;
         font-size: 1.2rem;
+        font-style: normal;
         font-weight: 600;
         margin-left: calc(100% - 80px);
         width: 80px;

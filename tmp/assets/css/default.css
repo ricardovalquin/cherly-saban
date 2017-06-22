@@ -1860,7 +1860,7 @@ footer .copyright-wp .roswell a:hover {
 
 .general-view-header .page-title {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -1871,7 +1871,7 @@ footer .copyright-wp .roswell a:hover {
 
 .general-view-header .page-title .content-title {
   font-family: didot;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: lighter;
 }
 
@@ -1895,31 +1895,39 @@ footer .copyright-wp .roswell a:hover {
 
 @media screen and (min-width: 1200px) {
   .general-view-header .page-title .content-title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     line-height: 4.5rem;
   }
 }
 
 .content-block {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
   margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .content-block {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .content-block {
     font-size: 1.6rem;
+    line-height: 3rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .content-block {
-    font-size: 1.5rem;
+  .content-block.bottom-separator {
+    margin-bottom: 3rem;
   }
 }
 
 .content-section {
-  color: #2F3130;
+  color: #2c3134;
 }
 
 .content-section h1, .content-section h2, .content-section h3, .content-section h4, .content-section h5, .content-section h6 {
@@ -1939,6 +1947,10 @@ footer .copyright-wp .roswell a:hover {
   color: #9a004f;
 }
 
+.content-section .linked-text:hover {
+  text-decoration: none;
+}
+
 .content-section .h2-content-title {
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -1947,6 +1959,7 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 544px) {
   .content-section .h2-content-title {
     font-size: 1.9rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1959,14 +1972,15 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 992px) {
   .content-section .h2-content-title {
     font-size: 2.2rem;
+    line-height: 2.7rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-section .h2-content-title {
-    font-size: 2.8rem;
-    line-height: 3.5rem;
-    margin: 1.5rem 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: 0;
   }
 }
 
@@ -1995,7 +2009,7 @@ footer .copyright-wp .roswell a:hover {
 }
 
 .content-section .right-image-content-wp {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .content-section .right-image-content-wp .left-content-text .content-list {
@@ -2004,9 +2018,53 @@ footer .copyright-wp .roswell a:hover {
   padding-left: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .content-section .right-image-content-wp .left-content-text .content-list {
+    margin: 2.5rem 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .right-image-content-wp .left-content-text .content-list {
+    margin: 3rem 0;
+  }
+}
+
 .content-section .right-image-content-wp .left-content-text .content-list .content-item {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .right-image-content-wp .left-content-text .content-list .content-item {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .right-image-content-wp .left-content-text .content-list .content-item {
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .full-width-img-wp {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-section .full-width-img-wp {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-section .full-width-img-wp {
+    margin-bottom: 5.5rem;
+  }
 }
 
 .content-section .full-width-img-wp img {
@@ -2014,7 +2072,7 @@ footer .copyright-wp .roswell a:hover {
 }
 
 .content-section .content-wp .h3-content-title {
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   margin: 2rem 0 1rem;
   line-height: 2.2rem;
 }
@@ -2028,19 +2086,21 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 768px) {
   .content-section .content-wp .h3-content-title {
     font-size: 1.9rem;
+    line-height: 2.6rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .content-section .content-wp .h3-content-title {
     font-size: 2.1rem;
+    line-height: 2.7rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-section .content-wp .h3-content-title {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
     margin: 1.5rem 0;
   }
 }
@@ -2052,47 +2112,66 @@ footer .copyright-wp .roswell a:hover {
 
 .content-section .content-wp .numbered-content-list .numbered-item {
   font-size: 1.2rem;
-  line-height: 1.6rem;
-  margin: 3px 0;
+  line-height: 1.8rem;
+  margin: 2px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .content-section .content-wp .numbered-content-list .numbered-item {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 2.5px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-section .content-wp .numbered-content-list .numbered-item {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin: 3px 0;
+  }
 }
 
 .content-section .content-wp .h4-content-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 2rem 0 1rem;
-  line-height: 2.2rem;
+  line-height: 1.7rem;
 }
 
 @media screen and (min-width: 544px) {
   .content-section .content-wp .h4-content-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .content-section .content-wp .h4-content-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .content-section .content-wp .h4-content-title {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-section .content-wp .h4-content-title {
-    font-size: 2.2rem;
-    line-height: 3rem;
-    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin: 0;
   }
 }
 
 .content-section .content-wp .block-quote .quote {
   font-family: didot;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-style: italic;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 
 @media screen and (min-width: 544px) {
@@ -2104,19 +2183,21 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 768px) {
   .content-section .content-wp .block-quote .quote {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .content-section .content-wp .block-quote .quote {
     font-size: 1.7rem;
+    line-height: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .content-section .content-wp .block-quote .quote {
     font-size: 1.8rem;
-    line-height: 2.5rem;
+    line-height: 3.4rem;
     margin: 1.5rem 0 0;
   }
 }
@@ -2125,7 +2206,7 @@ footer .copyright-wp .roswell a:hover {
   display: inline-block;
   font-family: didot;
   font-size: 1.1rem;
-  margin: 0.5rem 0 1rem;
+  margin: 1.6rem 0 1rem;
 }
 
 @media screen and (min-width: 544px) {
@@ -2140,8 +2221,15 @@ footer .copyright-wp .roswell a:hover {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .content-section .quote-separator {
+    margin-bottom: 6rem;
+    margin-top: 5.5rem;
+  }
+}
+
 .content-section .two-columns-wp {
-  margin: 4rem 0 2rem;
+  margin: 2rem 0 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -2156,6 +2244,12 @@ footer .copyright-wp .roswell a:hover {
 @media screen and (min-width: 992px) {
   .content-section .two-columns-wp .left-content-wp .content-block {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-section .two-columns-wp .left-content-wp .content-block {
+    margin-bottom: 0;
   }
 }
 
@@ -2175,7 +2269,7 @@ footer .copyright-wp .roswell a:hover {
 }
 
 .content-section .h5-content-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin: 2rem 0 1rem;
   line-height: 2.2rem;
 }
@@ -2200,14 +2294,14 @@ footer .copyright-wp .roswell a:hover {
 
 @media screen and (min-width: 1200px) {
   .content-section .h5-content-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 3rem;
-    margin: 1.5rem 0;
+    margin: 0;
   }
 }
 
 .content-section .h6-content-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 2rem 0 1rem;
   line-height: 2.2rem;
 }
@@ -2232,19 +2326,25 @@ footer .copyright-wp .roswell a:hover {
 
 @media screen and (min-width: 1200px) {
   .content-section .h6-content-title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.8rem;
-    margin: 1.5rem 0;
+    margin: 3.3rem 0 0;
   }
 }
 
 .contact-section {
-  color: #2F3130;
+  color: #2c3134;
 }
 
 @media screen and (min-width: 992px) {
   .contact-section {
     margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-section {
+    margin-top: 6rem;
   }
 }
 
@@ -2259,35 +2359,43 @@ footer .copyright-wp .roswell a:hover {
 
 .contact-section .contact-info-wp .contact-info-title {
   font-family: didot;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 2rem 0 1rem;
-  line-height: 2.2rem;
+  line-height: 1.5rem;
 }
 
 @media screen and (min-width: 544px) {
   .contact-section .contact-info-wp .contact-info-title {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .contact-section .contact-info-wp .contact-info-title {
     font-size: 1.6rem;
+    line-height: 2.2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .contact-section .contact-info-wp .contact-info-title {
     font-size: 1.8rem;
+    line-height: 2.5rem;
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact-section .contact-info-wp .contact-info-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 3rem;
+    margin-bottom: 0;
   }
+}
+
+.contact-section .contact-info-wp .content-block {
+  margin-top: 0;
 }
 
 .contact-section .contact-info-wp .contact-data-list {
@@ -2311,8 +2419,15 @@ footer .copyright-wp .roswell a:hover {
 
 @media screen and (min-width: 768px) {
   .contact-section .contact-info-wp .contact-data-list .contact-item {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section .contact-info-wp .contact-data-list .contact-item {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -2321,8 +2436,22 @@ footer .copyright-wp .roswell a:hover {
   text-indent: -1rem;
 }
 
+@media screen and (min-width: 992px) {
+  .contact-section .contact-info-wp .contact-data-list .contact-item.address-item {
+    padding-left: 4.2rem;
+    text-indent: -2.2rem;
+  }
+}
+
 .contact-section .contact-info-wp .contact-data-list .contact-item .contact-item-icon {
   margin-right: 5px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-section .contact-info-wp .contact-data-list .contact-item .contact-item-icon {
+    font-size: 2.4rem;
+    margin-right: 1.5rem;
+  }
 }
 
 .contact-section .form-wp {
@@ -2356,7 +2485,10 @@ footer .copyright-wp .roswell a:hover {
 
 @media screen and (min-width: 768px) {
   .contact-section .form-wp input, .contact-section .form-wp textarea {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    font-style: italic;
   }
 }
 
@@ -2400,6 +2532,7 @@ footer .copyright-wp .roswell a:hover {
   border: 1px solid #9a004f;
   color: #ffffff;
   font-size: 1.2rem;
+  font-style: normal;
   font-weight: 600;
   margin-left: calc(100% - 80px);
   width: 80px;
