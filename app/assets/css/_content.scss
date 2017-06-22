@@ -280,6 +280,14 @@
     }
   }
   .quote-separator {
+    @media screen and (min-width: $sm-min-width) {
+      margin-bottom: 2rem;
+      margin-top: 1.5rem;
+    }
+    @media screen and (min-width: $lg-min-width) {
+      margin-bottom: 4rem;
+      margin-top: 3.5rem;
+    }
     @media screen and (min-width: $xl-min-width) {
       margin-bottom: 6rem;
       margin-top: 5.5rem;
